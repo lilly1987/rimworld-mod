@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ChefMaid.label>厨艺女仆装</ChefMaid.label>
+  <ChefMaid.description>一款适合用于厨艺工作的女仆装，白色的露肩上衣和黑色短裙上点缀着红色丝带，承托女仆的可爱精干。附带的女仆工具套装让女仆可以更好的处理食物和它们的原材料，更好的为人们提供食物。</ChefMaid.description>
+  <CleanerMaid.label>杂务女仆装</CleanerMaid.label>
+  <CleanerMaid.description>一款适合用于杂务工作的女仆装，黑白相间的传统设计给人带来一种怀旧感，裙边特殊材质的白色蕾丝不仅使服饰整体显得更为精致，且其附带的净化效果使得女仆可以更好的适应危险环境。</CleanerMaid.description>
+  <CrafterMaid.label>工艺女仆装</CrafterMaid.label>
+  <CrafterMaid.description>一款适合用于专业工作的女仆装，柔软耐磨的布料让女仆在工作的时候可以更好的将精力专注于工作，裙装结构的特殊设计可以一定程度的帮助女仆释放压力，同时可以让女仆在进行研究工作的更好的进行思考。</CrafterMaid.description>
+  <FightMaid.label>战斗女仆装</FightMaid.label>
+  <FightMaid.description>一款适合出现在战场上的女仆装，厚重装甲层和辅助战斗AI的组合使得女仆在战场上可以拥有在单兵中绝对优越的战斗力，无论是在守护还是攻坚上都游刃有余。</FightMaid.description>
+  <HeaderMaid.label>女仆长装</HeaderMaid.label>
+  <HeaderMaid.description>一款精致，大气的裙装，比起工作类服饰更像正装或者礼服，而这款女仆装的穿戴者往往在家中负责统筹事务或者对外交涉。突显体型的设计使得女仆可以更好的展现自身魅力，折服他人。</HeaderMaid.description>
+  <NurseMaid.label>医疗女仆装</NurseMaid.label>
+  <NurseMaid.description>一款为精通医术的女仆设计的医疗女仆装。传统的设计配上白色蕾丝让穿上这套装束的女仆看起来有独特的风韵。干练的服装结构让女仆可以更快的从死神手里救下伤员，更好的保护伙伴。</NurseMaid.description>
+  <!-- hat -->
+  <MaidHatNA.label>工作女仆帽</MaidHatNA.label>
+  <MaidHatNA.description>一款精致的女仆帽，为长期进行工作的女仆所设计，可以一定程度上的增强女仆工作时的效率。</MaidHatNA.description>
+  <MaidHatNB.label>战斗女仆帽</MaidHatNB.label>
+  <MaidHatNB.description>一款安装了辅瞄器的女仆帽，布料的夹层中混入了凯夫拉纤维和金属丝，有着极强的防护能力，可以很好的保护女仆的头部，并提高女仆的攻击的精确性。</MaidHatNB.description>
+  <MaidHatNC.label>礼仪女仆帽</MaidHatNC.label>
+  <MaidHatNC.description>一款特制的女仆帽，让女仆看起来不像女仆而更像女主人一般。绚丽，优雅的同时不破坏女仆帽本身的属性，在与人沟通的时候，这款帽子可以为女仆提供充分的气场加成，使其的话语更有分量。</MaidHatNC.description>
+</LanguageData>

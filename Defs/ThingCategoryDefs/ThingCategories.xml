@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Apparel -->
+  <ThingCategoryDef>
+    <defName>MaidProject</defName>
+    <label>Maid Project</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+</Defs>

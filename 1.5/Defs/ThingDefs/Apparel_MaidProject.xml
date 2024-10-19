@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Welcome to modify the parameter.
+    DO NOT publish the revision with out the permission of the author.
+	Author: BJInternetSupervision /CN/  SteamID: 1324681595-->
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>MaidProject</defName>
+    <label>Maid Project</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+
+  <ThingDef Name="MaidCostumeMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>MaidCostumeCraftingTable</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>MaidTech</researchPrerequisite>
+    </recipeMaker>
+    <tradeability>Sellable</tradeability>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>MaidProject</li>
+    </thingCategories>
+    <generateCommonality>0</generateCommonality>
+    <apparel>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Neck</li>
+        <li>FullHead</li>
+        <li>Eyes</li>
+        <li>HeadAttackTool</li>
+        <li>UpperHead</li>
+        <li>HeadClaw</li>
+        <li>Feet</li>
+        <li>Hands</li>
+        <li>TuskAttackTool</li>
+        <li>FrontRightLeg</li>
+        <li>FrontRightPaw</li>
+        <li>RightHand</li>
+        <li>RightBlade</li>
+        <li>FrontRightClaws</li>
+        <li>FrontLeftPaw</li>
+        <li>FrontLeftLeg</li>
+        <li>FrontLeftClaws</li>
+        <li>LeftHand</li>
+        <li>LeftBlade</li>
+        <li>HornAttackTool</li>
+        <li>TurtleBeakAttackTool</li>
+        <li>Beak</li>
+        <li>MiddleFingers</li>
+        <li>Teeth</li>
+        <li>Mouth</li>
+        <li>Waist</li>
+      </bodyPartGroups>
+    </apparel>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>75</Plasteel>
+      <Cloth>100</Cloth>
+    </costList>
+    <statBases>
+      <Mass>0.8</Mass>
+      <WorkToMake>24000</WorkToMake>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>1950</MarketValue>
+      <Insulation_Cold>45</Insulation_Cold>
+      <Insulation_Heat>45</Insulation_Heat>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>5</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="MaidCostumeMakeableBase">
+    <defName>ChefMaid</defName>
+    <label>ChefMaid Costume</label>
+    <description>A maid dress suitable for cooking jobs, white off-the-shoulder top and black skirt embellished with red ribbon, supporting the maid's cute and smart. The accompanying maid tool set allows the maid to better handle the food and its raw materials, and to better feed the people.</description>
+    <graphicData>
+      <texPath>Things/Apparel/ChefMaid</texPath>
+    </graphicData>
+    <statBases>
+<MaxHitPoints>1000000</MaxHitPoints>
+<Flammability>0</Flammability>
+<DeteriorationRate>0</DeteriorationRate>
+<Mass>0</Mass>
+<WorkToMake>0</WorkToMake>
+<MarketValue>0</MarketValue>
+<EquipDelay>0</EquipDelay>
+<FoodPoisonChance>0</FoodPoisonChance>
+<IncomingDamageFactor>0</IncomingDamageFactor>
+<SlaveSuppressionFallRate>0</SlaveSuppressionFallRate>
+<BandwidthCost>0</BandwidthCost>
+<MortarMissRadiusFactor>0</MortarMissRadiusFactor>
+<StaggerDurationFactor>0</StaggerDurationFactor>
+<CancerRate>0.01</CancerRate>
+<FilthRate>0</FilthRate>
+<RangedWeapon_Cooldown>0.01</RangedWeapon_Cooldown>
+<RangedCooldownFactor>0.01</RangedCooldownFactor>
+<JoyFallRateFactor>0.0001</JoyFallRateFactor>
+<VEF_VerbCooldownFactor>0.1</VEF_VerbCooldownFactor>
+<MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+<MentalBreakThreshold>0.01</MentalBreakThreshold>
+<ControlTakingTime>0</ControlTakingTime>
+<AimingDelayFactor>0.01</AimingDelayFactor>
+<WastepacksPerRecharge>0</WastepacksPerRecharge>
+<BedHungerRateFactor>0</BedHungerRateFactor>
+<RestFallRateFactor>0.0001</RestFallRateFactor>
+<WorkToBuild>0</WorkToBuild>
+<MeleeCooldownFactor>0.05</MeleeCooldownFactor>
+<MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
+<MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+    </statBases>
+    <equippedStatOffsets>
+<MaxHitPoints>9999999</MaxHitPoints>
+<ArmorRating_Blunt>2</ArmorRating_Blunt>
+<ArmorRating_Sharp>2</ArmorRating_Sharp>
+<ArmorRating_Heat>2</ArmorRating_Heat>
+<Insulation_Cold>9999</Insulation_Cold>
+<Insulation_Heat>9999</Insulation_Heat>
+<Kiiro_RangeDodgeChance>9999</Kiiro_RangeDodgeChance>
+<MeleeDodgeChance>9999</MeleeDodgeChance>
+<StuffPower_Armor_Sharp>9999</StuffPower_Armor_Sharp>
+<StuffPower_Armor_Blunt>9999</StuffPower_Armor_Blunt>
+<StuffPower_Armor_Heat>9999</StuffPower_Armor_Heat>
+<WorkSpeedGlobal>9999</WorkSpeedGlobal>
+<Beauty>9999</Beauty>
+<MoveSpeed>9999</MoveSpeed>
+<CookSpeed>9999</CookSpeed>
+<ContainmentStrength>9999</ContainmentStrength>
+<SuppressionPower>9999</SuppressionPower>
+<ButcheryFleshSpeed>9999</ButcheryFleshSpeed>
+
+<EMPResistance>9999</EMPResistance>
+<LeatherAmount>9999</LeatherAmount>
+<MedicalTendQualityOffset>9999</MedicalTendQualityOffset>
+<DoorOpenSpeed>9999</DoorOpenSpeed>
+<TradePriceImprovement>0.395</TradePriceImprovement>
+<ConstructSuccessChance>1</ConstructSuccessChance>
+<ConstructionSpeed>9999</ConstructionSpeed>
+<MeatAmount>9999</MeatAmount>
+<PainShockThreshold>0.99</PainShockThreshold>
+<ManagingSpeed>9999</ManagingSpeed>
+<ConversionPower>9999</ConversionPower>
+<AccuracyShort>1</AccuracyShort>
+<ShootingAccuracyFactor_Short>9999</ShootingAccuracyFactor_Short>
+<VEF_MeleeAttackSpeedFactor>9999</VEF_MeleeAttackSpeedFactor>
+<MeleeHitChance>9999</MeleeHitChance>
+<AccuracyTouch>1</AccuracyTouch>
+<ShootingAccuracyFactor_Touch>9999</ShootingAccuracyFactor_Touch>
+<MeleeArmorPenetration>9999</MeleeArmorPenetration>
+<MeleeWeapon_AverageArmorPenetration>9999</MeleeWeapon_AverageArmorPenetration>
+<MeleeDodgeChanceIndoorsLitOffset>9999</MeleeDodgeChanceIndoorsLitOffset>
+<MeleeDodgeChanceIndoorsDarkOffset>9999</MeleeDodgeChanceIndoorsDarkOffset>
+<MeleeDodgeChanceOutdoorsLitOffset>9999</MeleeDodgeChanceOutdoorsLitOffset>
+<MeleeDodgeChanceOutdoorsDarkOffset>9999</MeleeDodgeChanceOutdoorsDarkOffset>
+<MeleeHitChanceIndoorsLitOffset>9999</MeleeHitChanceIndoorsLitOffset>
+<MeleeHitChanceIndoorsDarkOffset>9999</MeleeHitChanceIndoorsDarkOffset>
+<MeleeHitChanceOutdoorsLitOffset>9999</MeleeHitChanceOutdoorsLitOffset>
+<MeleeHitChanceOutdoorsDarkOffset>9999</MeleeHitChanceOutdoorsDarkOffset>
+
+<SmeltingSpeed>9999</SmeltingSpeed>
+<CrawlSpeed>9999</CrawlSpeed>
+<SlaveSuppressionOffset>9999</SlaveSuppressionOffset>
+<PruningSpeed>9999</PruningSpeed>
+<StuffPower_Insulation_Cold>9999</StuffPower_Insulation_Cold>
+<Ancot_ProjectileArmorPenetrationMultiplier>9999</Ancot_ProjectileArmorPenetrationMultiplier>
+<InjuryHealingFactor>9999</InjuryHealingFactor>
+<VEF_VerbRangeFactor>9999</VEF_VerbRangeFactor>
+<ShootingAccuracyIndoorsLitOffset>9999</ShootingAccuracyIndoorsLitOffset>
+<ShootingAccuracyIndoorsDarkOffset>9999</ShootingAccuracyIndoorsDarkOffset>
+<ShootingAccuracyOutdoorsLitOffset>9999</ShootingAccuracyOutdoorsLitOffset>
+<ShootingAccuracyOutdoorsDarkOffset>9999</ShootingAccuracyOutdoorsDarkOffset>
+<ShootingAccuracyPawn>9999</ShootingAccuracyPawn>
+<ShootingAccuracyChildFactor>9999</ShootingAccuracyChildFactor>
+
+<HuntingStealth>9999</HuntingStealth>
+<CaravanRidingSpeedFactor>9999</CaravanRidingSpeedFactor>
+<VEF_MassCarryCapacity>9999</VEF_MassCarryCapacity>
+<RawNutritionFactor>9999</RawNutritionFactor>
+<BiosculpterOccupantSpeed>9999</BiosculpterOccupantSpeed>
+<BiosculpterPodSpeedFactor>9999</BiosculpterPodSpeedFactor>
+<StonecuttingSpeed>9999</StonecuttingSpeed>
+<EatingSpeed>9999</EatingSpeed>
+<LifespanFactor>9999</LifespanFactor>
+<RestRateMultiplier>9999</RestRateMultiplier>
+<MedicalSurgerySuccessChance>9999</MedicalSurgerySuccessChance>
+<AccuracyLong>9999</AccuracyLong>
+<ShootingAccuracyFactor_Long>9999</ShootingAccuracyFactor_Long>
+
+<MedicalOperationSpeed>9999</MedicalOperationSpeed>
+<WorkTableEfficiencyFactor>9999</WorkTableEfficiencyFactor>
+<WorkTableWorkSpeedFactor>9999</WorkTableWorkSpeedFactor>
+<AssemblySpeedFactor>9999</AssemblySpeedFactor>
+<GlobalLearningFactor>9999</GlobalLearningFactor>
+<PlantHarvestYield>9999</PlantHarvestYield>
+<PlantWorkSpeed>9999</PlantWorkSpeed>
+<JoyGainFactor>9999</JoyGainFactor>
+<GeneralLaborSpeed>9999</GeneralLaborSpeed>
+<VEF_RangeAttackSpeedFactor>9999</VEF_RangeAttackSpeedFactor>
+<DrugHarvestYield>9999</DrugHarvestYield>
+<MedicalPotency>9999</MedicalPotency>
+<DrugSynthesisSpeed>9999</DrugSynthesisSpeed>
+<DrugSellPriceImprovement>9999</DrugSellPriceImprovement>
+<DrugCookingSpeed>9999</DrugCookingSpeed>
+
+<EntityStudyRate>9999</EntityStudyRate>
+<DeepDrillingSpeed>09999DeepDrillingSpeed>
+<ResearchSpeed>9999</ResearchSpeed>
+<ResearchSpeedFactor>9999</ResearchSpeedFactor>
+<Nutrition>9999</Nutrition>
+<RoyalFavorValue>9999</RoyalFavorValue>
+<PsychicEntropyMax>9999</PsychicEntropyMax>
+<ForagedNutritionPerDay>9999</ForagedNutritionPerDay>
+<SurgerySuccessChanceFactor>9999</SurgerySuccessChanceFactor>
+<GrowthVatOccupantSpeed>9999</GrowthVatOccupantSpeed>
+<VEF_GrowthPointMultiplier>9999</VEF_GrowthPointMultiplier>
+<MaxInstallCount>9999</MaxInstallCount>
+<MedicalQualityMax>9999</MedicalQualityMax>
+
+<ComfyTemperatureMax>9999</ComfyTemperatureMax>
+<PowerPlantMaxPowerOuput>9999</PowerPlantMaxPowerOuput>
+<ArrestSuccessChance99990</ArrestSuccessChance>
+<CleaningSpeed>9999</CleaningSpeed>
+<MiningYield>9999</MiningYield>
+<MiningSpeed>9999</MiningSpeed>
+<MeditationFocusGain>9999</MeditationFocusGain>
+<AccuracyMedium>9999</AccuracyMedium>
+<ShootingAccuracyFactor_Medium>9999</ShootingAccuracyFactor_Medium>
+<BedRestEffectiveness99990</BedRestEffectiveness>
+
+<ActivitySuppressionRate>9999</ActivitySuppressionRate>
+<HemogenGainFactor>9999</HemogenGainFactor>
+<VEF_FoodCapacityMultiplier>9999</VEF_FoodCapacityMultiplier>
+<HackingSpeed>9999</HackingSpeed>
+<LearningRateFactor>9999</LearningRateFactor>
+<SmoothingSpeed>9999</SmoothingSpeed>
+<Ancot_CaravanMoveSpeedFactor>9999</Ancot_CaravanMoveSpeedFactor>
+<MedicalTendQuality>9999</MedicalTendQuality>
+<MedicalTendSpeed>9999</MedicalTendSpeed>
+<BirthRitualQualityOffset>9999</BirthRitualQualityOffset>
+<AnimalProductsSellImprovement99990</AnimalProductsSellImprovement>
+<StudyEfficiency>9999</StudyEfficiency>
+<CarryingCapacity>9999</CarryingCapacity>
+<NegotiationAbility>9999</NegotiationAbility>
+<Ancot_WeaponMaxCharge>9999</Ancot_WeaponMaxCharge>
+<Ancot_WeaponMaxChargeFactor>9999</Ancot_WeaponMaxChargeFactor>
+<TameAnimalChance>9999</TameAnimalChance>
+
+<PsychicEntropyRecoveryRateOffset>9999</PsychicEntropyRecoveryRateOffset>
+<PsychicEntropyRecoveryRate>9999</PsychicEntropyRecoveryRate>
+<FixBrokenDownBuildingSuccessChance>9999</FixBrokenDownBuildingSuccessChance>
+<VEF_EnergyShieldRechargeRatePawn>9999</VEF_EnergyShieldRechargeRatePawn>
+<VEF_EnergyShieldEnergyMaxPawn>9999</VEF_EnergyShieldEnergyMaxPawn>
+<VEF_EnergyShieldEnergyMaxOffset>9999</VEF_EnergyShieldEnergyMaxOffset>
+<VEF_EnergyShieldEnergyMaxFactor>9999</VEF_EnergyShieldEnergyMaxFactor>
+<VEF_EnergyShieldRadiusPawn>9999</VEF_EnergyShieldRadiusPawn>
+<StuffPower_Insulation_Heat>9999</StuffPower_Insulation_Heat>
+<ButcheryMechanoidEfficiency>9999</ButcheryMechanoidEfficiency>
+<ButcheryMechanoidSpeed>9999</ButcheryMechanoidSpeed>
+<PawnBeauty>9999</PawnBeauty>
+<TrainAnimalChance>9999</TrainAnimalChance>
+<AnimalsLearningFactor>9999</AnimalsLearningFactor>
+<AnimalGatherYield>9999</AnimalGatherYield>
+<AnimalGatherSpeed>9999</AnimalGatherSpeed>
+<ToxicEnvironmentResistance>9999</ToxicEnvironmentResistance>
+<ToxicResistance>9999</ToxicResistance>
+<RoomReadingBonus>9999</RoomReadingBonus>
+<ReadingSpeed>9999</ReadingSpeed>
+<ButcheryFleshEfficiency>9999</ButcheryFleshEfficiency>
+<PawnTrapSpringChance>9999</PawnTrapSpringChance>
+<TrapSpringChance>9999</TrapSpringChance>
+
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/ChefMaid</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="MaidCostumeMakeableBase">
+    <defName>CleanerMaid</defName>
+    <label>CleanerMaid Costume</label>
+    <description>This is a maid dress suitable for chores. The traditional design of black and white brings a sense of nostalgia to people. The white lace with special material on the skirt not only makes the dress more delicate, but also makes the maid better adapt to the dangerous environment with its incidental purification effect.</description>
+    <graphicData>
+      <texPath>Things/Apparel/CleanerMaid</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.4</ArmorRating_Heat>
+      <Insulation_Cold>55</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>2</MoveSpeed>
+      <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+      <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+      <ToxicResistance>0.8</ToxicResistance>
+      <CarryingCapacity>75</CarryingCapacity>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/CleanerMaid</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="MaidCostumeMakeableBase">
+    <defName>CrafterMaid</defName>
+    <label>CrafterMaid Costume</label>
+    <description>A maid dress suitable for professional work, soft and wear-resistant fabric allows the maid to better focus on work, the special design of skirt structure can help the maid to release pressure to a certain extent, and at the same time allow the maid to better think in the research work.</description>
+    <graphicData>
+      <texPath>Things/Apparel/CrafterMaid</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.2</ArmorRating_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <GeneralLaborSpeed>0.5</GeneralLaborSpeed>
+      <SmeltingSpeed>0.5</SmeltingSpeed>
+      <ResearchSpeed>0.5</ResearchSpeed>
+      <SubcoreEncodingSpeed MayRequire="Ludeon.RimWorld.Biotech">0.5</SubcoreEncodingSpeed>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/CrafterMaid</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="MaidCostumeMakeableBase">
+    <defName>FightMaid</defName>
+    <label>FightMaid Costume</label>
+    <techLevel>Spacer</techLevel>
+    <description>It is a maid suit suitable for the battlefield. The combination of heavy armor layer and auxiliary fighting AI makes the maid have the absolute superior fighting power among individual soldiers in the battlefield, both in the defense and attack.</description>
+    <graphicData>
+      <texPath>Things/Apparel/FightMaid</texPath>
+    </graphicData>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>150</Plasteel>
+      <Cloth>150</Cloth>
+    </costList>
+    <statBases>
+      <Mass>8</Mass>
+      <WorkToMake>32000</WorkToMake>
+      <MarketValue>2925</MarketValue>
+      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.8</ArmorRating_Heat>
+      <Insulation_Cold>55</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>1.5</MoveSpeed>
+      <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.2</AimingDelayFactor>
+      <MeleeHitChance>5</MeleeHitChance>
+      <MeleeDodgeChance>5</MeleeDodgeChance>
+      <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+      <Flammability>-1</Flammability>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/FightMaid</wornGraphicPath>
+      <defaultOutfitTags Inherit="false">
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="MaidCostumeMakeableBase">
+    <defName>HeaderMaid</defName>
+    <label>HeaderMaid Costume</label>
+    <techLevel>Spacer</techLevel>
+    <description>A sophisticated, atmospheric dress that is more like a formal dress or gown than a maid dress, this maid dress is often worn by a person who is in charge of planning or negotiating at home. The body shape design allows the maid to better show her charm and impress others.</description>
+    <graphicData>
+      <texPath>Things/Apparel/HeaderMaid</texPath>
+    </graphicData>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Cloth>120</Cloth>
+    </costList>
+    <statBases>
+      <MarketValue>2925</MarketValue>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.3</SocialImpact>
+      <NegotiationAbility>0.5</NegotiationAbility>
+      <TradePriceImprovement>0.1</TradePriceImprovement>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+      <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">10</PsychicEntropyMax>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.1</PsychicEntropyRecoveryRate>
+      <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">10</MechBandwidth>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/HeaderMaid</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="MaidCostumeMakeableBase">
+    <defName>NurseMaid</defName>
+    <label>NurseMaid Costume</label>
+    <techLevel>Spacer</techLevel>
+    <description>A medical maid dress designed for a maid who is skilled in medicine. The traditional design paired with white lace gives the maid a unique look in this costume. The skillful costume structure allows the maid to save the wounded from the hands of death faster and better protect her friends.</description>
+    <graphicData>
+      <texPath>Things/Apparel/NurseMaid</texPath>
+    </graphicData>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Cloth>120</Cloth>
+    </costList>
+    <statBases>
+      <MarketValue>2925</MarketValue>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>55</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>2</MoveSpeed>
+      <MedicalOperationSpeed>0.5</MedicalOperationSpeed>
+      <MedicalTendSpeed>0.5</MedicalTendSpeed>
+      <MedicalTendQuality>0.5</MedicalTendQuality>
+      <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
+      <Flammability>-1</Flammability>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/NurseMaid</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <!--hat-->
+  <ThingDef Name="MaidHatCostumeMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>MaidCostumeCraftingTable</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>MaidTech</researchPrerequisite>
+    </recipeMaker>
+    <tradeability>Sellable</tradeability>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>MaidProject</li>
+    </thingCategories>
+    <generateCommonality>0</generateCommonality>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>0.1</Mass>
+      <WorkToMake>18000</WorkToMake>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>585</MarketValue>
+      <Flammability>0.2</Flammability>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+      <Beauty>4</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="MaidHatCostumeMakeableBase">
+    <defName>MaidHatNA</defName>
+    <label>Working maid hat</label>
+    <techLevel>Spacer</techLevel>
+    <description>A delicate maid's hat, designed for the maid who works for a long time, can enhance the efficiency of the maid's work to some extent.</description>
+    <graphicData>
+      <texPath>Things/Apparel/MaidHatNA</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.2</ArmorRating_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/MaidHatNA</wornGraphicPath>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  <ThingDef ParentName="MaidHatCostumeMakeableBase">
+    <defName>MaidHatNB</defName>
+    <label>Fight maid hat</label>
+    <techLevel>Spacer</techLevel>
+    <description>A maid's hat equipped with auxiliary sight, the fabric of the sandwich mixed with Kevlar fiber and wire, has a strong protective ability, can well protect the maid's head, and improve the accuracy of the maid's attack.</description>
+    <graphicData>
+      <texPath>Things/Apparel/MaidHatNB</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>0.5</Mass>
+      <WorkToMake>24000</WorkToMake>
+      <MaxHitPoints>500</MaxHitPoints>
+      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.8</ArmorRating_Heat>
+    </statBases>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.1</AimingDelayFactor>
+      <MeleeHitChance>5</MeleeHitChance>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/MaidHatNB</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  <ThingDef ParentName="MaidHatCostumeMakeableBase">
+    <defName>MaidHatNC</defName>
+    <label>Ceremonial maid hat</label>
+    <techLevel>Spacer</techLevel>
+    <description>A special maid hat makes her look less like a maid and more like a mistress. It is gorgeous and elegant without destroying the attributes of the maid's hat itself. When communicating with others, this hat can provide the maid with sufficient aura bonus and make her words carry more weight.</description>
+    <graphicData>
+      <texPath>Things/Apparel/MaidHatNC</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.4</ArmorRating_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <Beauty>2</Beauty>
+      <SocialImpact>0.1</SocialImpact>
+      <NegotiationAbility>0.1</NegotiationAbility>
+      <TradePriceImprovement>0.1</TradePriceImprovement>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/MaidHatNC</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+</Defs>

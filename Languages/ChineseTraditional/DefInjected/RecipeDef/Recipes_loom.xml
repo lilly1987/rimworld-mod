@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SalvageApparelMaidProject.label>回收衣物</SalvageApparelMaidProject.label>
+  <SalvageApparelMaidProject.description>拆解衣物来获取原材料。</SalvageApparelMaidProject.description>
+  <SalvageApparelMaidProject.jobString>正在回收衣物。</SalvageApparelMaidProject.jobString>
+
+
+</LanguageData>

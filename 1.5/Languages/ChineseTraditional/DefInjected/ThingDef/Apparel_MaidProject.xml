@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ChefMaid.label>廚藝女僕裝</ChefMaid.label>
+  <ChefMaid.description>一款適合用於廚藝工作的女僕裝，白色的露肩上衣和黑色短裙上點綴著紅色絲帶，承托女僕的可愛精幹。附帶的女僕工具套裝讓女僕可以更好的處理食物和它們的原材料，更好的為人們提供食物。</ChefMaid.description>
+  <CleanerMaid.label>雜務女僕裝</CleanerMaid.label>
+  <CleanerMaid.description>一款適合用於雜務工作的女僕裝，黑白相間的傳統設計給人帶來一種懷舊感，裙邊特殊材質的白色蕾絲不僅使服飾整體顯得更為精緻，且其附帶的淨化效果使得女僕可以更好的適應危險環境。</CleanerMaid.description>
+  <CrafterMaid.label>工藝女僕裝</CrafterMaid.label>
+  <CrafterMaid.description>一款適合用於專業工作的女僕裝，柔軟耐磨的布料讓女僕在工作的時候可以更好的將精力專注於工作，裙裝結構的特殊設計可以一定程度的幫助女僕釋放壓力，同時可以讓女僕在進行研究工作的更好的進行思考。</CrafterMaid.description>
+  <FightMaid.label>戰鬥女僕裝</FightMaid.label>
+  <FightMaid.description>一款適合出現在戰場上的女僕裝，厚重裝甲層和輔助戰鬥AI的組合使得女僕在戰場上可以擁有在單兵中絕對優越的戰鬥力，無論是在守護還是攻堅上都游刃有餘。</FightMaid.description>
+  <HeaderMaid.label>女僕長裝</HeaderMaid.label>
+  <HeaderMaid.description>一款精緻，大氣的裙裝，比起工作類服飾更像正裝或者禮服，而這款女僕裝的穿戴者往往在家中負責統籌事務或者對外交涉。突顯體型的設計使得女僕可以更好的展現自身魅力，折服他人。</HeaderMaid.description>
+  <NurseMaid.label>醫療女僕裝</NurseMaid.label>
+  <NurseMaid.description>一款為精通醫術的女僕設計的醫療女僕裝。傳統的設計配上白色蕾絲讓穿上這套裝束的女僕看起來有獨特的風韻。幹練的服裝結構讓女僕可以更快的從死神手裡救下傷員，更好的保護夥伴。</NurseMaid.description>
+  <!-- hat -->
+  <MaidHatNA.label>工作女僕帽</MaidHatNA.label>
+  <MaidHatNA.description>一款精緻的女僕帽，為長期進行工作的女僕所設計，可以一定程度上的增強女僕工作時的效率。</MaidHatNA.description>
+  <MaidHatNB.label>戰鬥女僕帽</MaidHatNB.label>
+  <MaidHatNB.description>一款安裝了輔瞄器的女僕帽，布料的夾層中混入了凱夫拉纖維和金屬絲，有著極強的防護能力，可以很好的保護女僕的頭部，並提高女僕的攻擊的精確性。</MaidHatNB.description>
+  <MaidHatNC.label>禮儀女僕帽</MaidHatNC.label>
+  <MaidHatNC.description>一款特製的女僕帽，讓女僕看起來不像女僕而更像女主人一般。絢麗，優雅的同時不破壞女僕帽本身的屬性，在與人溝通的時候，這款帽子可以為女僕提供充分的氣場加成，使其的話語更有分量。</MaidHatNC.description>
+</LanguageData>
