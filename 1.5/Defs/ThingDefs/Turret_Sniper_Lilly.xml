@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="AutocannonTurret">
+    <defName>Turret_Sniper_Lilly</defName>
+    <label>uranium slug turret</label>
+    <description>An armor-piercing turret. Its ultra-dense uranium shells can punch through heavy armor, but it requires new uranium slugs to be loaded after use. It's more accurate at longer ranges, and can't fire at all close up. May explode when damaged.</description>
+    <uiIconPath>Things/Building/Security/TurretSniper_MenuIcon</uiIconPath>
+    <size>(1,1)</size>
+    <fillPercent>100.0</fillPercent>
+    <statBases>
+      <MaxHitPoints>1000000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <WorkToBuild>0</WorkToBuild>
+      <Mass>1</Mass>
+      <Beauty>100</Beauty>
+      <ShootingAccuracyTurret>100.0</ShootingAccuracyTurret> <!-- like level 14 human shooter -->
+    </statBases>
+    <costList>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+
+      <li Class="CompProperties_Flickable"/>
+      <!--
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until rearm</fuelLabel>
+        <fuelGizmoLabel>Uranium slugs</fuelGizmoLabel>
+        <outOfFuelMessage>No slugs</outOfFuelMessage>
+        <fuelFilter><thingDefs><li>Uranium</li></thingDefs></fuelFilter>
+        <fuelCapacity>30</fuelCapacity>       <!- 20 bursts ->
+        <fuelMultiplier>0.5</fuelMultiplier> <!- 2 uranium per shot, 60 per full rearm ->
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+      -->
+    </comps>
+    <building>
+      <turretGunDef>Gun_TurretSniper_Lilly</turretGunDef>
+      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>SniperTurret</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_TurretSniper_Lilly</defName>
+    <label>uranium slug cannon</label>
+    <description>A self-loading uranium slug cannon designed to attach to a turret.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretSniper_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>100.0</AccuracyTouch>
+      <AccuracyShort>100.0</AccuracyShort>
+      <AccuracyMedium>100.0</AccuracyMedium>
+      <AccuracyLong>100.0</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_TurretSniper_Lilly</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>0.0</minRange>
+        <range>500</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_TurretSniper</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_TurretSniper_Lilly</defName>
+    <label>uranium slug</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>100</damageAmountBase>
+      <speed>1200</speed>
+    </projectile>
+  </ThingDef>
+  
+
+</Defs>
