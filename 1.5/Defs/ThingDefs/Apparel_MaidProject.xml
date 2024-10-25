@@ -181,7 +181,7 @@
 <LifespanFactor>100</LifespanFactor>
 <ManagingSpeed>100</ManagingSpeed>
 <MaxHitPoints>100</MaxHitPoints>
-<MaxNutrition>100</MaxNutrition>
+<MaxNutrition>10</MaxNutrition>
 <MedicalOperationSpeed>100</MedicalOperationSpeed>
 <MedicalPotency>100</MedicalPotency>
 <MedicalQualityMax>100</MedicalQualityMax>
@@ -205,7 +205,7 @@
 <MiningSpeed>100</MiningSpeed>
 <MoveSpeed>100</MoveSpeed>
 <NegotiationAbility>100</NegotiationAbility>
-<Nutrition>100</Nutrition>
+<Nutrition>10</Nutrition>
 <PawnBeauty>100</PawnBeauty>
 <PlantWorkSpeed>100</PlantWorkSpeed>
 <PowerPlantMaxPowerOuput>100</PowerPlantMaxPowerOuput>

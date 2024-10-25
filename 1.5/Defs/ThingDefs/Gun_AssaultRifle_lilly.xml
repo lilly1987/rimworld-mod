@@ -23,6 +23,10 @@
       <AccuracyMedium>1.0</AccuracyMedium>
       <AccuracyLong>1.0</AccuracyLong>
       <RangedWeapon_Cooldown>0.850</RangedWeapon_Cooldown>
+      <Beauty>100</Beauty>
+      <Flammability>0.0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <SellPriceFactor>1.0</SellPriceFactor>
     </statBases>
     <costList>
       <Steel>1</Steel>

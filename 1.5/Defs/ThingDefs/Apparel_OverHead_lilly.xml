@@ -122,7 +122,7 @@
 		<Cloth>1</Cloth>
 	</costList>
 	<graphicData>
-		<texPath>SingleGlass/SingleGlass</texPath>
+		<texPath>Things/SingleGlass/SingleGlass</texPath>
 		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<statBases Inherit="false">
@@ -154,7 +154,7 @@
 		<layers Inherit="false">
           <li>EyeCover</li>
         </layers>
-		<wornGraphicPath>SingleGlass</wornGraphicPath>
+		<wornGraphicPath>Things/SingleGlass/SingleGlass</wornGraphicPath>
 	</apparel>
 	<equippedStatOffsets  Inherit="false">
 		<ResearchSpeed>0.25</ResearchSpeed>

@@ -8,7 +8,7 @@
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Auto_Mortar/AutoMortar_Base</texPath>
+      <texPath>Things/Auto_Mortar/AutoMortar_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(5, 5)</drawSize>
       <damageData>
@@ -19,7 +19,7 @@
         <offset>(0,0,-0.05)</offset>
       </shadowData>
     </graphicData>
-    <uiIconPath>Auto_Mortar/AutoMortar_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Auto_Mortar/AutoMortar_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
 	<minifiedDef>MinifiedThing</minifiedDef>
 	<thingCategories>
@@ -63,7 +63,7 @@
         <!-<factorByDifficulty>true</factorByDifficulty>->
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs shells</outOfFuelMessage>
-        <fuelIconPath>Auto_Mortar/yoink</fuelIconPath>
+        <fuelIconPath>Things/Auto_Mortar/yoink</fuelIconPath>
       </li>
       -->
     </comps>
@@ -118,7 +118,7 @@
     <label>automortar</label>
     <description>good god this is a pain.</description>
     <graphicData>
-      <texPath>Auto_Mortar/AutoMortar_Top</texPath>
+      <texPath>Things/Auto_Mortar/AutoMortar_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(6.5,6.5)</drawSize>
     </graphicData>
