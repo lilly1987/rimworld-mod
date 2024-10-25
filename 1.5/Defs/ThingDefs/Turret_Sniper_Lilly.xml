@@ -9,7 +9,7 @@
     <size>(1,1)</size>
     <fillPercent>100.0</fillPercent>
     <statBases>
-      <MaxHitPoints>1000000</MaxHitPoints>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Flammability>0.0</Flammability>
       <WorkToBuild>0</WorkToBuild>
       <Mass>1</Mass>
@@ -58,11 +58,11 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <AccuracyTouch>100.0</AccuracyTouch>
-      <AccuracyShort>100.0</AccuracyShort>
-      <AccuracyMedium>100.0</AccuracyMedium>
-      <AccuracyLong>100.0</AccuracyLong>
-      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      <AccuracyTouch>1.0</AccuracyTouch>
+      <AccuracyShort>1.0</AccuracyShort>
+      <AccuracyMedium>1.0</AccuracyMedium>
+      <AccuracyLong>1.0</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>1</Mass>
       <Flammability>0</Flammability>
@@ -93,8 +93,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>100</damageAmountBase>
-      <speed>1200</speed>
+      <damageAmountBase>55</damageAmountBase>
+      <speed>240</speed>
     </projectile>
   </ThingDef>
   

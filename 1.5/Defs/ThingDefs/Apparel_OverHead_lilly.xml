@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="ApparelBase_Kiiro_lilly" ParentName="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	  <drawSize>1.0</drawSize>
+	  <drawOffset>(0,0,0)</drawOffset>
+    </graphicData>
+	<drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <Beauty>5</Beauty>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <burnableByRecipe>true</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+<ThingDef Name="Kiiro_ApparelBase_lilly" ParentName="ApparelBase_Kiiro_lilly" Abstract="True">
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wearPerDay>0.001</wearPerDay>
+		<tags>
+		  <li>Royal</li>
+		  <li>RoyalTier2</li>
+          <li>RoyalTier3</li>
+          <li>RoyalTier5</li>
+		  <li>RoyalTier6</li>
+		  <li>RoyalTier7</li>
+		</tags>
+		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+	</apparel>
+	<!-- <tradeability>Sellable</tradeability> -->
+	<tradeTags>
+      <li>Apparel</li>
+    </tradeTags>
+	<statBases>
+		<Flammability>0.4</Flammability>
+		<DeteriorationRate>1</DeteriorationRate>
+		<Beauty>1</Beauty>
+	</statBases>
+	<recipeMaker>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<recipeUsers>
+			<li>Kiiro_TailoringBench</li>
+			<li>Kiiro_HandleTailoringBench</li>
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		<defaultIngredientFilter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Gold</li>
+				<li>Silver</li>
+				<li>Plasteel</li>
+				<li>Jade</li>
+				<li>Uranium</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+	</recipeMaker>
+</ThingDef>
+
+<ThingDef Name="Kiiro_OverheadBase_lilly" ParentName="Kiiro_ApparelBase_lilly" Abstract="True">
+	<statBases>
+		<Mass>0.2</Mass>
+		<EquipDelay>0.5</EquipDelay>
+	</statBases>
+	<apparel>	
+		<layers>
+			<li>Overhead</li>
+		</layers>
+	</apparel>
+	<thingCategories>
+		<li>Kiiro_Apparel_Overhead</li>
+	</thingCategories>
+</ThingDef>
+
+<ThingDef Name="Kiiro_OverheadBaseII_lilly" ParentName="Kiiro_OverheadBase_lilly" Abstract="True">
+	<recipeMaker>
+	    <!--<displayPriority>1100</displayPriority>-->
+		<researchPrerequisite>Kiiro_Apparel_II</researchPrerequisite>
+	</recipeMaker>
+	<apparel>
+		<tags>
+			<li>Kiiro_OverHead</li>
+		</tags>
+	</apparel>
+	<tradeTags>
+      <li>Kiiro_DailyClothing</li>
+    </tradeTags>
+</ThingDef>
+
+<ThingDef ParentName="Kiiro_OverheadBaseII_lilly">
+	<defName>Kiiro_SingleGlass_Lilly</defName>
+	<label>kiiro single glass</label>
+	<description>Wearing a single-lens eyeglass that gives an impression of being knowledgeable to those around, creating the illusion that the wearer knows a lot, and the wearer themselves seemingly becoming smarter as a result.\n\nDue to kiiro's ears being located on the top of their head, glasses frames cannot hold well. It is advisable not to wear them during labor-intensive tasks.</description>
+	<costList Inherit="false">
+		<Cloth>1</Cloth>
+	</costList>
+	<graphicData>
+		<texPath>SingleGlass/SingleGlass</texPath>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<statBases Inherit="false">
+		<MaxHitPoints>10</MaxHitPoints>
+		<WorkToMake>2400</WorkToMake>
+		<StuffEffectMultiplierArmor>0.0</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<recipeMaker>
+	    <effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+	    <researchPrerequisite Inherit="false">Kiiro_Machining</researchPrerequisite>
+		<recipeUsers Inherit="false">
+			<li>Kiiro_MachiningBench</li>
+		</recipeUsers>
+	</recipeMaker>
+	<apparel>
+	    <tags Inherit="false">
+			<li>Kiiro_Researcher</li>
+			<li>Kiiro_EyeCover</li>
+			<li>Kiiro_Glasses</li>
+		</tags>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<useWornGraphicMask>false</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Eyes</li>
+		</bodyPartGroups>
+		<layers Inherit="false">
+          <li>EyeCover</li>
+        </layers>
+		<wornGraphicPath>SingleGlass</wornGraphicPath>
+	</apparel>
+	<equippedStatOffsets  Inherit="false">
+		<ResearchSpeed>0.25</ResearchSpeed>
+		<SocialImpact>0.02</SocialImpact>
+		<NegotiationAbility>0.05</NegotiationAbility>
+		<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+	</equippedStatOffsets>
+</ThingDef>
+
+
+
+</Defs>

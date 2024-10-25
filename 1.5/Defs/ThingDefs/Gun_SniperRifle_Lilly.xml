@@ -25,11 +25,11 @@
       <WorkToMake>1</WorkToMake>
       <Mass>1</Mass>
       <SellPriceFactor>1.0</SellPriceFactor>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>1.0</AccuracyShort>
-      <AccuracyMedium>1.0</AccuracyMedium>
-      <AccuracyLong>1.0</AccuracyLong>
-      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+      <AccuracyTouch>10.0</AccuracyTouch>
+      <AccuracyShort>10.0</AccuracyShort>
+      <AccuracyMedium>10.0</AccuracyMedium>
+      <AccuracyLong>10.0</AccuracyLong>
+      <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
       <Flammability>0.0</Flammability>
       <Beauty>100</Beauty>
       <DeteriorationRate>0</DeteriorationRate>
@@ -40,8 +40,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_SniperRifle_lilly</defaultProjectile>
-        <warmupTime>0.5</warmupTime>
-        <range>100.0</range>
+        <warmupTime>0.875</warmupTime>
+        <range>500.0</range>
         <soundCast>Shot_SniperRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -80,9 +80,9 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>100</damageAmountBase>
+      <damageAmountBase>50</damageAmountBase>
       <stoppingPower>10.0</stoppingPower>
-      <speed>1000</speed>
+      <speed>200</speed>
     </projectile>
   </ThingDef>
   

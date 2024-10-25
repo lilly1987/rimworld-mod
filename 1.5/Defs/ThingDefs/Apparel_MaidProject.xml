@@ -49,27 +49,26 @@
         <li>Arms</li>
         <li>Legs</li>
         <li>Neck</li>
+        <li>Eyes</li>
       </bodyPartGroups>
     </apparel>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costList>
-      <ComponentSpacer>1</ComponentSpacer>
-      <Plasteel>75</Plasteel>
-      <Cloth>100</Cloth>
+      <Cloth>1</Cloth>
     </costList>
     <statBases>
-      <Mass>0.8</Mass>
-      <WorkToMake>24000</WorkToMake>
+      <Mass>0.0</Mass>
+      <WorkToMake>1</WorkToMake>
       <DeteriorationRate>0</DeteriorationRate>
-      <MaxHitPoints>250</MaxHitPoints>
-      <MarketValue>1950</MarketValue>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <MarketValue>1</MarketValue>
       <Insulation_Cold>45</Insulation_Cold>
       <Insulation_Heat>45</Insulation_Heat>
-      <Flammability>0.4</Flammability>
-      <EquipDelay>5</EquipDelay>
-      <Beauty>16</Beauty>
+      <Flammability>0.0</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>100</Beauty>
     </statBases>
   </ThingDef>
 
@@ -258,7 +257,7 @@
 <VEF_EnergyShieldRechargeRatePawn>100</VEF_EnergyShieldRechargeRatePawn>
 <VEF_FoodCapacityMultiplier>100</VEF_FoodCapacityMultiplier>
 <VEF_GrowthPointMultiplier>100</VEF_GrowthPointMultiplier>
-<VEF_MassCarryCapacity>100</VEF_MassCarryCapacity>
+<VEF_MassCarryCapacity>10000</VEF_MassCarryCapacity>
 <VEF_VerbRangeFactor>100</VEF_VerbRangeFactor>
 <WorkSpeedGlobal>100</WorkSpeedGlobal>
 <WorkTableEfficiencyFactor>100</WorkTableEfficiencyFactor>
@@ -471,8 +470,7 @@
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
     </apparel>
     <costList>
-      <Plasteel>20</Plasteel>
-      <ComponentSpacer>1</ComponentSpacer>
+      <Cloth>1</Cloth>
     </costList>
     <statBases>
       <Mass>0.1</Mass>
@@ -520,16 +518,15 @@
       <texPath>Things/Apparel/MaidHatNB</texPath>
     </graphicData>
     <statBases>
-      <Mass>0.5</Mass>
-      <WorkToMake>24000</WorkToMake>
-      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>0.0</Mass>
+      <WorkToMake>1</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
       <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
       <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
       <ArmorRating_Heat>0.8</ArmorRating_Heat>
     </statBases>
     <costList>
-      <Plasteel>60</Plasteel>
-      <ComponentSpacer>2</ComponentSpacer>
+      <Cloth>1</Cloth>
     </costList>
     <equippedStatOffsets>
       <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
