@@ -34,7 +34,7 @@
       <Beauty>100</Beauty>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
-    <costList/>
+    <costList Inherit="false"/>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

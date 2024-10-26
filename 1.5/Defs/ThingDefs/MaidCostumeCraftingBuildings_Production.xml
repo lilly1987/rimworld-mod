@@ -11,11 +11,8 @@
       <drawSize>(3,1)</drawSize>
     </graphicData>
     <constructEffect>ConstructMetal</constructEffect>
-    <costList>
-      <WoodLog>75</WoodLog>
-      <Steel>150</Steel>
-      <Silver>250</Silver>
-      <ComponentIndustrial>10</ComponentIndustrial>
+    <costList Inherit="false">
+      <WoodLog>1</WoodLog>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>

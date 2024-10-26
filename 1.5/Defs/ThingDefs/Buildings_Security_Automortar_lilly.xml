@@ -75,7 +75,7 @@
       <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>50</costStuffCount>
-    <costList>
+    <costList  Inherit="false">
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>

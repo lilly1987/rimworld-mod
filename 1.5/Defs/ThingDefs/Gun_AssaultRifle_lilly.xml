@@ -28,8 +28,7 @@
       <DeteriorationRate>0</DeteriorationRate>
       <SellPriceFactor>1.0</SellPriceFactor>
     </statBases>
-    <costList>
-      <Steel>1</Steel>
+    <costList Inherit="false">
     </costList>
     <verbs>
       <li>

@@ -16,7 +16,7 @@
       <Beauty>100</Beauty>
       <ShootingAccuracyTurret>100.0</ShootingAccuracyTurret> <!-- like level 14 human shooter -->
     </statBases>
-    <costList>
+    <costList Inherit="false">
     </costList>
     <comps>
       <li Class="CompProperties_Forbiddable"/>

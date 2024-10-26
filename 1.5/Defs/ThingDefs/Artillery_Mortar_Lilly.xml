@@ -15,7 +15,7 @@
       <Mass>1</Mass>
       <Beauty>100</Beauty>
     </statBases>
-    <costList>
+    <costList Inherit="false">
     </costList>
     <comps>
     <!--
