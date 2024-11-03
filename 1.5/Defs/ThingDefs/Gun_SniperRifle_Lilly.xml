@@ -34,6 +34,7 @@
       <Beauty>100</Beauty>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
+    <recipeUsers Inherit="false"/>
     <costList Inherit="false"/>
     <verbs>
       <li>

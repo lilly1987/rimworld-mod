@@ -10,7 +10,27 @@
     <parent>Apparel</parent>
   </ThingCategoryDef>
 
-  <ThingDef Name="MaidCostumeMakeableBase" ParentName="ApparelBase" Abstract="True">
+  <ThingDef Name="MaidCostumeMakeableBaseLilly" ParentName="ApparelBase" Abstract="True">
+
+    <statBases>
+    
+<MaxHitPoints>10000</MaxHitPoints>
+<Insulation_Cold>100</Insulation_Cold>
+<Insulation_Heat>100</Insulation_Heat>
+<DeteriorationRate>0</DeteriorationRate>
+<Flammability>0</Flammability>
+<Mass>0</Mass>
+<WorkToMake>0</WorkToMake>
+<MarketValue>0</MarketValue>
+<ArmorRating_Blunt>2</ArmorRating_Blunt>
+<ArmorRating_Sharp>2</ArmorRating_Sharp>
+<ArmorRating_Heat>2</ArmorRating_Heat>
+<EquipDelay>0</EquipDelay>
+<Beauty>100</Beauty>
+
+    </statBases>
+    <costList Inherit="false">
+    </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
@@ -35,6 +55,33 @@
     <thingCategories>
       <li>MaidProject</li>
     </thingCategories>
+    
+	<apparel>
+		<tags>
+			<li>Royal</li>
+			<li>RoyalTier1</li>
+			<li>RoyalTier2</li>
+			<li>RoyalTier3</li>
+			<li>RoyalTier4</li>
+			<li>RoyalTier5</li>
+			<li>RoyalTier6</li>
+			<li>RoyalTier7</li>
+		</tags>
+	</apparel>
+  </ThingDef>
+  
+  <ThingDef Name="MaidCostumeMakeableBase" ParentName="MaidCostumeMakeableBaseLilly" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>MaidCostumeCraftingTable</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>MaidTech</researchPrerequisite>
+    </recipeMaker>
     <generateCommonality>0</generateCommonality>
     <apparel>
       <layers>
@@ -44,31 +91,141 @@
         <li>Worker</li>
       </defaultOutfitTags>
       <bodyPartGroups>
-        <li>Torso</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-        <li>Neck</li>
-        <li>Eyes</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Neck</li>
+				<li>Feet</li>
+				<li>Hands</li>
+				<li>Milira_Wings</li>
       </bodyPartGroups>
     </apparel>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <costList Inherit="false">
-    </costList>
-    <statBases>
-      <Mass>0.0</Mass>
-      <WorkToMake>1</WorkToMake>
-      <DeteriorationRate>0</DeteriorationRate>
-      <MaxHitPoints>10000</MaxHitPoints>
-      <MarketValue>1</MarketValue>
-      <Insulation_Cold>45</Insulation_Cold>
-      <Insulation_Heat>45</Insulation_Heat>
-      <Flammability>0.0</Flammability>
-      <EquipDelay>1</EquipDelay>
-      <Beauty>100</Beauty>
-    </statBases>
+
+	<tradeTags>
+      <li>Apparel</li>
+    </tradeTags>
+
+    <equippedStatOffsets>
+    <Mass>-1000</Mass>
+<Flammability>-1000</Flammability>
+<SlaveSuppressionOffset>1000</SlaveSuppressionOffset>
+
+<VEF_GrowthPointMultiplier>1000</VEF_GrowthPointMultiplier>
+<MaxHitPoints>1000</MaxHitPoints>
+<VEF_FoodCapacityMultiplier>1000</VEF_FoodCapacityMultiplier>
+
+
+
+<PainShockThreshold>1000</PainShockThreshold>
+<Terror>-1000</Terror>
+<CrawlSpeed>1000</CrawlSpeed>
+<ToxicResistance>1000</ToxicResistance>
+<ToxicEnvironmentResistance>1000</ToxicEnvironmentResistance>
+<AnimalsLearningFactor>1000</AnimalsLearningFactor>
+<InjuryHealingFactor>1000</InjuryHealingFactor>
+<SocialIdeoSpreadFrequencyFactor>1000</SocialIdeoSpreadFrequencyFactor>
+<CaravanRidingSpeedFactor>1000</CaravanRidingSpeedFactor>
+<VEF_MassCarryCapacity>1000000</VEF_MassCarryCapacity>
+<RawNutritionFactor>1000</RawNutritionFactor>
+<EatingSpeed>1000</EatingSpeed>
+<VV_GrowthPointsFactor>1000</VV_GrowthPointsFactor>
+<RestRateMultiplier>1000</RestRateMultiplier>
+<LifespanFactor>1000</LifespanFactor>
+
+<CancerRate>-1000</CancerRate>
+<ResearchProject>1000</ResearchProject>
+<FilthRate>-1000</FilthRate>
+<CarryingCapacity>1000</CarryingCapacity>
+<MoveSpeed>1000</MoveSpeed>
+<JoyFallRateFactor>-1000</JoyFallRateFactor>
+<GlobalLearningFactor>1000</GlobalLearningFactor>
+<CertaintyLossFactor>-1000</CertaintyLossFactor>
+<MentalBreakThreshold>-1000</MentalBreakThreshold>
+<ComfyTemperatureMax>1000</ComfyTemperatureMax>
+<ComfyTemperatureMin>-1000</ComfyTemperatureMin>
+<Ancot_CaravanMoveSpeedFactor>1000</Ancot_CaravanMoveSpeedFactor>
+<RestFallRateFactor>-1000</RestFallRateFactor>
+<LearningRateFactor>1000</LearningRateFactor>
+<ImmunityGainSpeed>1000</ImmunityGainSpeed>
+<HemogenGainFactor>1000</HemogenGainFactor>
+
+<BiosculpterOccupantSpeed>1000</BiosculpterOccupantSpeed>
+<GrowthVatOccupantSpeed>1000</GrowthVatOccupantSpeed>
+
+<EMPResistance>1000</EMPResistance>
+<BandwidthCost>-1000</BandwidthCost>
+<MechEnergyLossPerHP>-1000</MechEnergyLossPerHP>
+<MechEnergyUsageFactor>-1000</MechEnergyUsageFactor>
+<ControlTakingTime>-1000</ControlTakingTime>
+<WastepacksPerRecharge>-1000</WastepacksPerRecharge>
+
+<TradePriceImprovement>1000</TradePriceImprovement>
+<ConversionPower>1000</ConversionPower>
+<SlaveSuppressionFallRate>-1000</SlaveSuppressionFallRate>
+<TrainAnimalChance>1000</TrainAnimalChance>
+<PawnBeauty>1000</PawnBeauty>
+<SocialImpact>1000</SocialImpact>
+<TameAnimalChance>1000</TameAnimalChance>
+<DrugSellPriceImprovement>1000</DrugSellPriceImprovement>
+<SuppressionPower>1000</SuppressionPower>
+<NegotiationAbility>1000</NegotiationAbility>
+<ArrestSuccessChance>1000</ArrestSuccessChance>
+<AnimalProductsSellImprovement>1000</AnimalProductsSellImprovement>
+
+<ConstructSuccessChance>1000</ConstructSuccessChance>
+
+
+
+<VV_HoneyGatherSpeed>1000</VV_HoneyGatherSpeed>
+
+
+
+
+<ReadingSpeed>1000</ReadingSpeed>
+
+
+
+
+<FixBrokenDownBuildingSuccessChance>1000</FixBrokenDownBuildingSuccessChance>
+<HuntingStealth>1000</HuntingStealth>
+
+
+
+<FoodPoisonChance>-1000</FoodPoisonChance>
+
+
+
+
+
+
+
+
+
+
+<WorkSpeedGlobal>1000</WorkSpeedGlobal>
+
+
+
+
+<CleaningSpeed>1000</CleaningSpeed>
+
+<MedicalTendQuality>1000</MedicalTendQuality>
+
+
+
+<ActivitySuppressionRate>1000</ActivitySuppressionRate>
+
+<MeleeDodgeChance>1000</MeleeDodgeChance>
+<PawnTrapSpringChance>-1000</PawnTrapSpringChance>
+<IncomingDamageFactor>-1000</IncomingDamageFactor>
+<Kiiro_RangeDodgeChance>1000</Kiiro_RangeDodgeChance>
+
+    </equippedStatOffsets>
+    
   </ThingDef>
 
   <ThingDef ParentName="MaidCostumeMakeableBase">
@@ -78,191 +235,7 @@
     <graphicData>
       <texPath>Things/Apparel/ChefMaid</texPath>
     </graphicData>
-    <statBases>
-<StaggerDurationFactor>0</StaggerDurationFactor>
-<AimingDelayFactor>0.01</AimingDelayFactor>
-<BandwidthCost>0.01</BandwidthCost>
-<BedHungerRateFactor>0.01</BedHungerRateFactor>
-<CancerRate>0.01</CancerRate>
-<CertaintyLossFactor>0.01</CertaintyLossFactor>
-<ComfyTemperatureMin>0.01</ComfyTemperatureMin>
-<ControlTakingTime>0.01</ControlTakingTime>
-<DeteriorationRate>0.01</DeteriorationRate>
-<EquipDelay>0.01</EquipDelay>
-<FilthRate>0.01</FilthRate>
-<Flammability>0.01</Flammability>
-<FoodPoisonChance>0.01</FoodPoisonChance>
-<IncomingDamageFactor>0.01</IncomingDamageFactor>
-<JoyFallRateFactor>0.01</JoyFallRateFactor>
-<MarketValue>0.01</MarketValue>
-<MarketValueIgnoreHp>0.01</MarketValueIgnoreHp>
-<Mass>0.01</Mass>
-<MechEnergyLossPerHP>0.01</MechEnergyLossPerHP>
-<MechEnergyUsageFactor>0.01</MechEnergyUsageFactor>
-<MentalBreakThreshold>0.01</MentalBreakThreshold>
-<MinimumContainmentStrength>0.01</MinimumContainmentStrength>
-<MinimumHandlingSkill>0.01</MinimumHandlingSkill>
-<PainShockThreshold.01>0.01</PainShockThreshold.01>
-<PsychicEntropyGain>0.01</PsychicEntropyGain>
-<RestFallRateFactor>0.01</RestFallRateFactor>
-<SlaveSuppressionFallRate>0.01</SlaveSuppressionFallRate>
-<StaggerDurationFactor>0.01</StaggerDurationFactor>
-<WastepacksPerRecharge>0.01</WastepacksPerRecharge>
-<WorkToBuild>0.01</WorkToBuild>
-<WorkToMake>0.01</WorkToMake>
-<ToxicResistance>1</ToxicResistance>
-<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-<ArmorRating_Blunt>2</ArmorRating_Blunt>
-<ArmorRating_Sharp>2</ArmorRating_Sharp>
-<ArmorRating_Heat>2</ArmorRating_Heat>
-<MaxHitPoints>10000</MaxHitPoints>
-<StuffPower_Armor_Sharp>100</StuffPower_Armor_Sharp>
-<StuffPower_Armor_Blunt>100</StuffPower_Armor_Blunt>
-<StuffPower_Armor_Heat>100</StuffPower_Armor_Heat>
-<Insulation_Cold>100</Insulation_Cold>
-<Insulation_Heat>100</Insulation_Heat>
 
-    </statBases>
-    <equippedStatOffsets>
-    
-<AccuracyLong>100</AccuracyLong>
-<AccuracyMedium>100</AccuracyMedium>
-<AccuracyShort>100</AccuracyShort>
-<AccuracyTouch>100</AccuracyTouch>
-<ActivitySuppressionRate>100</ActivitySuppressionRate>
-<Ancot_CaravanMoveSpeedFactor>100</Ancot_CaravanMoveSpeedFactor>
-<AnimalGatherSpeed>100</AnimalGatherSpeed>
-<AnimalProductsSellImprovement>100</AnimalProductsSellImprovement>
-<AnimalsLearningFactor>100</AnimalsLearningFactor>
-<ArrestSuccessChance>100</ArrestSuccessChance>
-<AssemblySpeedFactor>100</AssemblySpeedFactor>
-<BabyPlayGainFactor>100</BabyPlayGainFactor>
-<BedRestEffectiveness>100</BedRestEffectiveness>
-<BiosculpterOccupantSpeed>100</BiosculpterOccupantSpeed>
-<BiosculpterPodSpeedFactor>100</BiosculpterPodSpeedFactor>
-<BirthRitualQualityOffset>100</BirthRitualQualityOffset>
-<ButcheryFleshEfficiency>100</ButcheryFleshEfficiency>
-<ButcheryFleshSpeed>100</ButcheryFleshSpeed>
-<ButcheryMechanoidSpeed>100</ButcheryMechanoidSpeed>
-<CaravanRidingSpeedFactor>100</CaravanRidingSpeedFactor>
-<CarryingCapacity>100</CarryingCapacity>
-<CleaningSpeed>100</CleaningSpeed>
-<ColdContainmentBonus>100</ColdContainmentBonus>
-<ComfyTemperatureMax>100</ComfyTemperatureMax>
-<ConstructionSpeed>100</ConstructionSpeed>
-<ConstructSuccessChance>100</ConstructSuccessChance>
-<ContainmentStrength>100</ContainmentStrength>
-<ConversionPower>100</ConversionPower>
-<CookSpeed>100</CookSpeed>
-<CrawlSpeed>100</CrawlSpeed>
-<DeepDrillingSpeed>100</DeepDrillingSpeed>
-<DoorOpenSpeed>100</DoorOpenSpeed>
-<DrugCookingSpeed>100</DrugCookingSpeed>
-<DrugSellPriceImprovement>100</DrugSellPriceImprovement>
-<DrugSynthesisSpeed>100</DrugSynthesisSpeed>
-<EatingSpeed>100</EatingSpeed>
-<EMPResistance>100</EMPResistance>
-<EntityStudyRate>100</EntityStudyRate>
-<FixBrokenDownBuildingSuccessChance>100</FixBrokenDownBuildingSuccessChance>
-<GeneralLaborSpeed>100</GeneralLaborSpeed>
-<GlobalLearningFactor>100</GlobalLearningFactor>
-<GrowthVatOccupantSpeed>100</GrowthVatOccupantSpeed>
-<HackingSpeed>100</HackingSpeed>
-<HemogenGainFactor>100</HemogenGainFactor>
-<HuntingStealth>100</HuntingStealth>
-<ImmunityGainSpeed>100</ImmunityGainSpeed>
-<ImmunityGainSpeedFactor>100</ImmunityGainSpeedFactor>
-<InjuryHealingFactor>100</InjuryHealingFactor>
-<JoyGainFactor>100</JoyGainFactor>
-<Kiiro_DodgePostProcessFactor>100</Kiiro_DodgePostProcessFactor>
-<Kiiro_RangeDodgeChance>100</Kiiro_RangeDodgeChance>
-<LearningRateFactor>100</LearningRateFactor>
-<LifespanFactor>100</LifespanFactor>
-<ManagingSpeed>100</ManagingSpeed>
-<MaxHitPoints>100</MaxHitPoints>
-<MaxNutrition>10</MaxNutrition>
-<MedicalOperationSpeed>100</MedicalOperationSpeed>
-<MedicalPotency>100</MedicalPotency>
-<MedicalQualityMax>100</MedicalQualityMax>
-<MedicalSurgerySuccessChance>100</MedicalSurgerySuccessChance>
-<MedicalTendQuality>100</MedicalTendQuality>
-<MedicalTendQualityOffset>100</MedicalTendQualityOffset>
-<MedicalTendSpeed>100</MedicalTendSpeed>
-<MeditationFocusGain>100</MeditationFocusGain>
-<MeleeArmorPenetration>100</MeleeArmorPenetration>
-<MeleeDodgeChance>100</MeleeDodgeChance>
-<MeleeDodgeChanceIndoorsDarkOffset>100</MeleeDodgeChanceIndoorsDarkOffset>
-<MeleeDodgeChanceIndoorsLitOffset>100</MeleeDodgeChanceIndoorsLitOffset>
-<MeleeDodgeChanceOutdoorsDarkOffset>100</MeleeDodgeChanceOutdoorsDarkOffset>
-<MeleeDodgeChanceOutdoorsLitOffset>100</MeleeDodgeChanceOutdoorsLitOffset>
-<MeleeHitChance>100</MeleeHitChance>
-<MeleeHitChanceIndoorsDarkOffset>100</MeleeHitChanceIndoorsDarkOffset>
-<MeleeHitChanceIndoorsLitOffset>100</MeleeHitChanceIndoorsLitOffset>
-<MeleeHitChanceOutdoorsDarkOffset>100</MeleeHitChanceOutdoorsDarkOffset>
-<MeleeHitChanceOutdoorsLitOffset>100</MeleeHitChanceOutdoorsLitOffset>
-<MeleeWeapon_AverageArmorPenetration>100</MeleeWeapon_AverageArmorPenetration>
-<MiningSpeed>100</MiningSpeed>
-<MoveSpeed>100</MoveSpeed>
-<NegotiationAbility>100</NegotiationAbility>
-<Nutrition>10</Nutrition>
-<PawnBeauty>100</PawnBeauty>
-<PlantWorkSpeed>100</PlantWorkSpeed>
-<PowerPlantMaxPowerOuput>100</PowerPlantMaxPowerOuput>
-<PruningSpeed>100</PruningSpeed>
-<PsychicEntropyMax>100</PsychicEntropyMax>
-<PsychicEntropyMaxOffset>100</PsychicEntropyMaxOffset>
-<PsychicEntropyRecoveryRate>100</PsychicEntropyRecoveryRate>
-<PsychicEntropyRecoveryRateOffset>100</PsychicEntropyRecoveryRateOffset>
-<PsychicRitualQuality>100</PsychicRitualQuality>
-<PsychicRitualQualityOffset>100</PsychicRitualQualityOffset>
-<RawNutritionFactor>100</RawNutritionFactor>
-<ReadingSpeed>100</ReadingSpeed>
-<ResearchProject>100</ResearchProject>
-<ResearchSpeed>100</ResearchSpeed>
-<ResearchSpeedFactor>100</ResearchSpeedFactor>
-<RestRateMultiplier>100</RestRateMultiplier>
-<RoomReadingBonus>100</RoomReadingBonus>
-<ShootingAccuracyChildFactor>100</ShootingAccuracyChildFactor>
-<ShootingAccuracyFactor_Long>100</ShootingAccuracyFactor_Long>
-<ShootingAccuracyFactor_Medium>100</ShootingAccuracyFactor_Medium>
-<ShootingAccuracyFactor_Short>100</ShootingAccuracyFactor_Short>
-<ShootingAccuracyFactor_Touch>100</ShootingAccuracyFactor_Touch>
-<ShootingAccuracyIndoorsDarkOffset>100</ShootingAccuracyIndoorsDarkOffset>
-<ShootingAccuracyIndoorsLitOffset>100</ShootingAccuracyIndoorsLitOffset>
-<ShootingAccuracyOutdoorsDarkOffset>100</ShootingAccuracyOutdoorsDarkOffset>
-<ShootingAccuracyOutdoorsLitOffset>100</ShootingAccuracyOutdoorsLitOffset>
-<ShootingAccuracyPawn>100</ShootingAccuracyPawn>
-<SlaveSuppressionOffset>100</SlaveSuppressionOffset>
-<SmeltingSpeed>100</SmeltingSpeed>
-<SmoothingSpeed>100</SmoothingSpeed>
-<SocialIdeoSpreadFrequencyFactor>100</SocialIdeoSpreadFrequencyFactor>
-<StonecuttingSpeed>100</StonecuttingSpeed>
-<StudyEfficiency>100</StudyEfficiency>
-<StuffPower_Armor_Blunt>100</StuffPower_Armor_Blunt>
-<StuffPower_Armor_Heat>100</StuffPower_Armor_Heat>
-<StuffPower_Armor_Sharp>100</StuffPower_Armor_Sharp>
-<StuffPower_Insulation_Cold>100</StuffPower_Insulation_Cold>
-<StuffPower_Insulation_Heat>100</StuffPower_Insulation_Heat>
-<SuppressionPower>100</SuppressionPower>
-<SurgerySuccessChanceFactor>100</SurgerySuccessChanceFactor>
-<TameAnimalChance>100</TameAnimalChance>
-<ToxicEnvironmentResistance>100</ToxicEnvironmentResistance>
-<ToxicResistance>100</ToxicResistance>
-<TradePriceImprovement>100</TradePriceImprovement>
-<TrainAnimalChance>100</TrainAnimalChance>
-<VEF_EnergyShieldEnergyMaxFactor>100</VEF_EnergyShieldEnergyMaxFactor>
-<VEF_EnergyShieldEnergyMaxOffset>100</VEF_EnergyShieldEnergyMaxOffset>
-<VEF_EnergyShieldEnergyMaxPawn>100</VEF_EnergyShieldEnergyMaxPawn>
-<VEF_EnergyShieldRechargeRatePawn>100</VEF_EnergyShieldRechargeRatePawn>
-<VEF_FoodCapacityMultiplier>100</VEF_FoodCapacityMultiplier>
-<VEF_GrowthPointMultiplier>100</VEF_GrowthPointMultiplier>
-<VEF_MassCarryCapacity>10000</VEF_MassCarryCapacity>
-<VEF_VerbRangeFactor>100</VEF_VerbRangeFactor>
-<WorkSpeedGlobal>100</WorkSpeedGlobal>
-<WorkTableEfficiencyFactor>100</WorkTableEfficiencyFactor>
-<WorkTableWorkSpeedFactor>100</WorkTableWorkSpeedFactor>
-
-    </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>Things/Apparel/ChefMaid</wornGraphicPath>
     </apparel>
@@ -275,20 +248,6 @@
     <graphicData>
       <texPath>Things/Apparel/CleanerMaid</texPath>
     </graphicData>
-    <statBases>
-      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.4</ArmorRating_Heat>
-      <Insulation_Cold>55</Insulation_Cold>
-      <Insulation_Heat>55</Insulation_Heat>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>2</MoveSpeed>
-      <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
-      <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
-      <ToxicResistance>0.8</ToxicResistance>
-      <CarryingCapacity>75</CarryingCapacity>
-    </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>Things/Apparel/CleanerMaid</wornGraphicPath>
     </apparel>
@@ -301,18 +260,6 @@
     <graphicData>
       <texPath>Things/Apparel/CrafterMaid</texPath>
     </graphicData>
-    <statBases>
-      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.2</ArmorRating_Heat>
-    </statBases>
-    <equippedStatOffsets>
-      <GeneralLaborSpeed>0.5</GeneralLaborSpeed>
-      <SmeltingSpeed>0.5</SmeltingSpeed>
-      <ResearchSpeed>0.5</ResearchSpeed>
-      <SubcoreEncodingSpeed MayRequire="Ludeon.RimWorld.Biotech">0.5</SubcoreEncodingSpeed>
-      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
-    </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>Things/Apparel/CrafterMaid</wornGraphicPath>
     </apparel>
@@ -326,30 +273,6 @@
     <graphicData>
       <texPath>Things/Apparel/FightMaid</texPath>
     </graphicData>
-    <costList>
-      <ComponentSpacer>2</ComponentSpacer>
-      <Plasteel>150</Plasteel>
-      <Cloth>150</Cloth>
-    </costList>
-    <statBases>
-      <Mass>8</Mass>
-      <WorkToMake>32000</WorkToMake>
-      <MarketValue>2925</MarketValue>
-      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.8</ArmorRating_Heat>
-      <Insulation_Cold>55</Insulation_Cold>
-      <Insulation_Heat>55</Insulation_Heat>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>1.5</MoveSpeed>
-      <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
-      <AimingDelayFactor>-0.2</AimingDelayFactor>
-      <MeleeHitChance>5</MeleeHitChance>
-      <MeleeDodgeChance>5</MeleeDodgeChance>
-      <IncomingDamageFactor>-0.1</IncomingDamageFactor>
-      <Flammability>-1</Flammability>
-    </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>Things/Apparel/FightMaid</wornGraphicPath>
       <defaultOutfitTags Inherit="false">
@@ -366,26 +289,6 @@
     <graphicData>
       <texPath>Things/Apparel/HeaderMaid</texPath>
     </graphicData>
-    <costList>
-      <ComponentSpacer>2</ComponentSpacer>
-      <Cloth>120</Cloth>
-    </costList>
-    <statBases>
-      <MarketValue>2925</MarketValue>
-      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.6</ArmorRating_Heat>
-    </statBases>
-    <equippedStatOffsets>
-      <SocialImpact>0.3</SocialImpact>
-      <NegotiationAbility>0.5</NegotiationAbility>
-      <TradePriceImprovement>0.1</TradePriceImprovement>
-      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
-      <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
-      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">10</PsychicEntropyMax>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.1</PsychicEntropyRecoveryRate>
-      <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">10</MechBandwidth>
-    </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>Things/Apparel/HeaderMaid</wornGraphicPath>
     </apparel>
@@ -399,58 +302,17 @@
     <graphicData>
       <texPath>Things/Apparel/NurseMaid</texPath>
     </graphicData>
-    <costList>
-      <ComponentSpacer>2</ComponentSpacer>
-      <Cloth>120</Cloth>
-    </costList>
-    <statBases>
-      <MarketValue>2925</MarketValue>
-      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.6</ArmorRating_Heat>
-      <Insulation_Cold>55</Insulation_Cold>
-      <Insulation_Heat>55</Insulation_Heat>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>2</MoveSpeed>
-      <MedicalOperationSpeed>0.5</MedicalOperationSpeed>
-      <MedicalTendSpeed>0.5</MedicalTendSpeed>
-      <MedicalTendQuality>0.5</MedicalTendQuality>
-      <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
-      <Flammability>-1</Flammability>
-      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
-    </equippedStatOffsets>
+    
     <apparel>
       <wornGraphicPath>Things/Apparel/NurseMaid</wornGraphicPath>
     </apparel>
   </ThingDef>
 
   <!--hat-->
-  <ThingDef Name="MaidHatCostumeMakeableBase" ParentName="ApparelBase" Abstract="True">
-    <recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Machining</soundWorking>
-      <recipeUsers>
-        <li>MaidCostumeCraftingTable</li>
-      </recipeUsers>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <researchPrerequisite>MaidTech</researchPrerequisite>
-    </recipeMaker>
-    <tradeability>Sellable</tradeability>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>RGBA(1,1,1,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
-    <techLevel>Spacer</techLevel>
-    <thingCategories>
-      <li>MaidProject</li>
-    </thingCategories>
+  <ThingDef Name="MaidHatCostumeMakeableBase" ParentName="MaidCostumeMakeableBaseLilly" Abstract="True">
+
+
+
     <generateCommonality>0</generateCommonality>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
@@ -464,24 +326,27 @@
         <li>Overhead</li>
       </layers>
       <bodyPartGroups>
-        <li>FullHead</li>
+        <li>eyes</li>
       </bodyPartGroups>
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
     </apparel>
-    <costList>
-      <Cloth>1</Cloth>
-    </costList>
+
     <statBases>
-      <Mass>0.1</Mass>
-      <WorkToMake>18000</WorkToMake>
-      <MaxHitPoints>250</MaxHitPoints>
-      <MarketValue>585</MarketValue>
-      <Flammability>0.2</Flammability>
-      <Insulation_Cold>5</Insulation_Cold>
-      <Insulation_Heat>5</Insulation_Heat>
-      <EquipDelay>2</EquipDelay>
-      <Beauty>4</Beauty>
-      <DeteriorationRate>0</DeteriorationRate>
+    
+<MaxHitPoints>10000</MaxHitPoints>
+<Insulation_Cold>100</Insulation_Cold>
+<Insulation_Heat>100</Insulation_Heat>
+<DeteriorationRate>0</DeteriorationRate>
+<Flammability>0</Flammability>
+<Mass>0</Mass>
+<WorkToMake>0</WorkToMake>
+<MarketValue>0</MarketValue>
+<ArmorRating_Blunt>2</ArmorRating_Blunt>
+<ArmorRating_Sharp>2</ArmorRating_Sharp>
+<ArmorRating_Heat>2</ArmorRating_Heat>
+<EquipDelay>0</EquipDelay>
+<Beauty>100</Beauty>
+
     </statBases>
   </ThingDef>
 
@@ -493,14 +358,7 @@
     <graphicData>
       <texPath>Things/Apparel/MaidHatNA</texPath>
     </graphicData>
-    <statBases>
-      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.2</ArmorRating_Heat>
-    </statBases>
-    <equippedStatOffsets>
-      <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
-    </equippedStatOffsets>
+
     <apparel>
       <wornGraphicPath>Things/Apparel/MaidHatNA</wornGraphicPath>
       <defaultOutfitTags>
@@ -516,17 +374,7 @@
     <graphicData>
       <texPath>Things/Apparel/MaidHatNB</texPath>
     </graphicData>
-    <statBases>
-      <Mass>0.0</Mass>
-      <WorkToMake>1</WorkToMake>
-      <MaxHitPoints>10000</MaxHitPoints>
-      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.8</ArmorRating_Heat>
-    </statBases>
-    <costList>
-      <Cloth>1</Cloth>
-    </costList>
+
     <equippedStatOffsets>
       <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
       <AimingDelayFactor>-0.1</AimingDelayFactor>
@@ -544,17 +392,6 @@
     <graphicData>
       <texPath>Things/Apparel/MaidHatNC</texPath>
     </graphicData>
-    <statBases>
-      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.4</ArmorRating_Heat>
-    </statBases>
-    <equippedStatOffsets>
-      <Beauty>2</Beauty>
-      <SocialImpact>0.1</SocialImpact>
-      <NegotiationAbility>0.1</NegotiationAbility>
-      <TradePriceImprovement>0.1</TradePriceImprovement>
-    </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>Things/Apparel/MaidHatNC</wornGraphicPath>
     </apparel>

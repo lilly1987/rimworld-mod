@@ -44,9 +44,6 @@
       <turretGunDef>Gun_TurretSniper_Lilly</turretGunDef>
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
-    <researchPrerequisites>
-      <li>SniperTurret</li>
-    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">

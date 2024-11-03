@@ -82,7 +82,7 @@
     <label>Salvage apparels</label>
     <description>Disassemble apparels for fabric.</description>
     <jobString>Salvaging apparels</jobString>
-    <workAmount>180</workAmount>
+    <workAmount>0</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Tailor</effectWorking>
     <soundWorking>Recipe_Tailor</soundWorking>

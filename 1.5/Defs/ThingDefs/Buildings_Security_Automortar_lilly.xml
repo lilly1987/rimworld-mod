@@ -39,10 +39,6 @@
     <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>150</basePowerConsumption>
-      </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
       <!--
@@ -75,12 +71,12 @@
       <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>50</costStuffCount>
-    <costList  Inherit="false">
+    <costList Inherit="false">
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <specialDisplayRadius>29.9</specialDisplayRadius>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>0</constructionSkillPrerequisite>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>Gun_AutoMortarTurret_Lilly</turretGunDef>
@@ -90,9 +86,6 @@
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
-    <researchPrerequisites>
-      <li>Mortars</li>
-    </researchPrerequisites>
     <uiIconScale>0.6</uiIconScale>
   </ThingDef>
 
