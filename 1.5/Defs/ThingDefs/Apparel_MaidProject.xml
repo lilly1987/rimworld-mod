@@ -323,10 +323,10 @@
         <li>Soldier</li>
       </defaultOutfitTags>
       <layers>
-        <li>Overhead</li>
+        <li>EyeCover</li>
       </layers>
       <bodyPartGroups>
-        <li>eyes</li>
+        <li>Eyes</li>
       </bodyPartGroups>
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
     </apparel>
