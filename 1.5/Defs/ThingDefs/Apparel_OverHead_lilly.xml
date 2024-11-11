@@ -5,7 +5,7 @@
     <thingClass>Apparel</thingClass>
     <category>Item</category>
     <selectable>True</selectable>
-    <pathCost>10</pathCost>
+    <!--<pathCost>10</pathCost>-->
     <useHitPoints>True</useHitPoints>
     <techLevel>Medieval</techLevel>
     <graphicData>

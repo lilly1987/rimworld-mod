@@ -70,7 +70,7 @@
         <defaultProjectile>Bullet_TurretSniper_Lilly</defaultProjectile>
         <warmupTime>0</warmupTime>
         <minRange>0.0</minRange>
-        <range>500</range>
+        <range>250</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_TurretSniper</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>

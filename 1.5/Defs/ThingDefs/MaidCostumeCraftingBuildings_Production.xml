@@ -25,7 +25,7 @@
     <size>(3,1)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
+    <!--<pathCost>70</pathCost>-->
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>

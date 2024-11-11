@@ -30,6 +30,7 @@
 
     </statBases>
     <costList Inherit="false">
+      <Cloth>1</Cloth>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -330,7 +331,6 @@
       </bodyPartGroups>
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
     </apparel>
-
     <statBases>
     
 <MaxHitPoints>10000</MaxHitPoints>
